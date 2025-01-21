@@ -14,7 +14,7 @@
 <body>
     <header class="bg-info text-white text-center py-4">
         <h1>Welcome to the Dan Heng Appreciation Club</h1>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light justify-content-center">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -85,41 +85,42 @@
             <h2>Upcoming Events</h2>
             <p>Join us for our exciting events! Here’s what we have planned:</p>
             <ul class="list-group">
-                <li class="list-group-item">Fan Art Contest - March 15, 2024, at Community Center. Submit your best fan art for a chance to win prizes!</li>
-                <li class="list-group-item">Monthly Club Meeting - April 10, 2024, at Library Room 2. Discuss upcoming events and share ideas.</li>
-                <li class="list-group-item">Game Night - April 25, 2024, at Online (Discord). Join us for a fun night of games and camaraderie!</li>
+                <li class="list-group-item">Fan Art Contest - Submit your artwork by the end of the month!</li>
+                <li class="list-group-item">Game Night - Join us every Friday for a fun gaming session.</li>
+                <li class="list-group-item">Monthly Meeting - Discuss club activities and future plans on the first Saturday of each month.</li>
             </ul>
         </section>
 
         <section id="gallery" class="mb-4">
-            <h2>Fan Art Gallery</h2>
-            <p>Check out our talented members' fan art submissions! Click on the images to view them in a larger format.</p>
-            <div class="gallery">
-                <a href="images/fanart1.jpg" data-lightbox="fanart" data-title="Fan Art 1"><img src="images/fanart1.jpg" alt="Fan Art 1" class="img-thumbnail"></a>
-                <a href="images/fanart2.jpg" data-lightbox="fanart" data-title="Fan Art 2"><img src="images/fanart2.jpg" alt="Fan Art 2" class="img-thumbnail"></a>
-                <a href="images/fanart3.jpg" data-lightbox="fanart" data-title="Fan Art 3"><img src="images/fanart3.jpg" alt="Fan Art 3" class="img-thumbnail"></a>
+            <h2>Gallery</h2>
+            <p>Check out some amazing fan art and photos from our events!</p>
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="images/art1.jpg" class="img-fluid" alt="Fan Art 1">
+                </div>
+                <div class="col-md-4">
+                    <img src="images/art2.jpg" class="img-fluid" alt="Fan Art 2">
+                </div>
+                <div class="col-md-4">
+                    <img src="images/art3.jpg" class="img-fluid" alt="Fan Art 3">
+                </div>
             </div>
         </section>
     </div>
 
-    <footer class="bg-info text-white text-center py-3">
-        <p>&copy; 2023 Dan Heng Appreciation Club</p>
+    <footer class="bg-light text-center py-4">
+        <p>&copy; 2023 Dan Heng Appreciation Club. All rights reserved.</p>
     </footer>
 
-    <script src="js/script.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet" />
-
     <script>
-        // Sample data for the membership growth chart
         const ctx = document.getElementById('membershipChart').getContext('2d');
         const membershipChart = new Chart(ctx, {
             type: 'line',
             data: {
-                labels: ['January', 'February', 'March', 'April', 'May', 'June'],
+                labels: ['January', 'February', 'March', 'April', 'May'],
                 datasets: [{
-                    label: 'Members Joined',
-                    data: [5, 10, 15, 20, 25, 30], // Sample data
+                    label: 'Membership Growth',
+                    data: [10, 20, 30, 50, 80],
                     borderColor: 'rgba(75, 192, 192, 1)',
                     borderWidth: 2,
                     fill: false
